@@ -1,0 +1,289 @@
+<div>
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="testwebcss.css">
+        <script type="text/javascript" src="testweb.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    </head>
+
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="" alt=""></div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li>
+                    <label for="btn-1" class="show">Features +</label>
+                    <a href="#">Features</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Elements</a></li>
+                        <li><a href="#">Icons</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="btn-2" class="show">Services +</label>
+                    <a href="#">Services</a>
+                    <input type="checkbox" id="btn-2">
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">App Design</a></li>
+                        <li>
+                            <label for="btn-3" class="show">More +</label>
+                            <a href="#">More <span class="fa fa-plus"></span></a>
+                            <input type="checkbox" id="btn-3">
+                            <ul>
+                                <li><a href="#">Submenu-1</a></li>
+                                <li><a href="#">Submenu-2</a></li>
+                                <li><a href="#">Submenu-3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="floating-panel">
+            <select id="start" onchange="onchangefun()">
+                <option>Chọn Điểm Xuất Phát</option>
+                <option value="0">
+                    <0> Công An Phường Hàng Gai
+                </option>
+                <option value="1">
+                    <1> Ngã 4 Hàng Nón - Hàng Điếu
+                </option>
+                <option value="2">
+                    <2> Ngã tư Hàng Bông - Hàng Hòm
+                </option>
+                <option value="3">
+                    <3> Cafe Nuôi 34 - Lương Văn Can
+                </option>
+                <option value="4">
+                    <4> SaomBank PGD Hàng Bồ
+                </option>
+                <option value="5">
+                    <5> Văn Phòng phẩm Phương Nội
+                </option>
+                <option value="6">
+                    <6> KingRoti- Hàng Gai
+                </option>
+                <option value="7">
+                    <7> Ngã Tư Chùa Kim Cổ
+                </option>
+                <option value="8">
+                    <8> Ngã 3 Đường Thành - Yên Thái
+                </option>
+                <option value="9">
+                    <9> Golden Moon Hotel & Travel
+                </option>
+                <option value="10">
+                    <10> Ngã Tư Hàng Bông - Hàng Mành
+                </option>
+                <option value="11">
+                    <11> Phố Chả Cá - Hàng Cân
+                </option>
+                <option value="12">
+                    <12> Ủy Ban Phường Hàng Gai , quận Hoàn Kiếm
+                </option>
+                <option value="13">
+                    <13> Xôi Rán Hàng Điếu
+                </option>
+                <option value="14">
+                    <14> Ngân Hàng Đầu Tư & Phát Triển Việt Nam (Bidv) - PGD Đường Thành
+                </option>
+                <option value="15">
+                    <15> Bia Hơi Ngọc Linh
+                </option>
+                <option value="16">
+                    <16> phố Hàng Vải - Thuốc bắc
+                </option>
+                <option value="17">
+                    <17> Hạ Long Bay CastaWay Tour
+                </option>
+                <option value="18">
+                    <18> Ngã 3 Hàng Phèn
+                </option>
+                <option value="19">
+                    <19> Công ty cổ phần sữa Hà Nội
+                </option>
+                <option value="20">
+                    <20> Marker & Food Phố Cổ
+                </option>
+            </select>
+            <select id="stop" onchange="onchangefun()">
+                <option> Nhập Điểm Đến</option>
+                <option value="0">
+                    <0> Công An Phường Hàng Gai
+                </option>
+                <option value="1">
+                    <1> Ngã 4 Hàng Nón - Hàng Điếu
+                </option>
+                <option value="2">
+                    <2> Ngã tư Hàng Bông - Hàng Hòm
+                </option>
+                <option value="3">
+                    <3> Cafe Nuôi 34 - Lương Văn Can
+                </option>
+                <option value="4">
+                    <4> SaomBank PGD Hàng Bồ
+                </option>
+                <option value="5">
+                    <5> Văn Phòng phẩm Phương Nội
+                </option>
+                <option value="6">
+                    <6> KingRoti- Hàng Gai
+                </option>
+                <option value="7">
+                    <7> Ngã Tư Chùa Kim Cổ
+                </option>
+                <option value="8">
+                    <8> Ngã 3 Đường Thành - Yên Thái
+                </option>
+                <option value="9">
+                    <9> Golden Moon Hotel & Travel
+                </option>
+                <option value="10">
+                    <10> Ngã Tư Hàng Bông - Hàng Mành
+                </option>
+                <option value="11">
+                    <11> Phố Chả Cá - Hàng Cân
+                </option>
+                <option value="12">
+                    <12> Ủy Ban Phường Hàng Gai , quận Hoàn Kiếm
+                </option>
+                <option value="13">
+                    <13> Xôi Rán Hàng Điếu
+                </option>
+                <option value="14">
+                    <14> Ngân Hàng Đầu Tư & Phát Triển Việt Nam (Bidv) - PGD Đường Thành
+                </option>
+                <option value="15">
+                    <15> Bia Hơi Ngọc Linh
+                </option>
+                <option value="16">
+                    <16> phố Hàng Vải - Thuốc bắc
+                </option>
+                <option value="17">
+                    <17> Hạ Long Bay CastaWay Tour
+                </option>
+                <option value="18">
+                    <18> Ngã 3 Hàng Phèn
+                </option>
+                <option value="19">
+                    <19> Công ty cổ phần sữa Hà Nội
+                </option>
+                <option value="20">
+                    <20> Marker & Food Phố Cổ
+                </option>
+            </select>
+        </div>
+        <div id="map"></div>
+        <div class="middle">
+            <div class="menu">
+                <li class="item" id="profile">
+                    <a href="#profile" class="btn"><i class="fas fa-globe"></i>Hiện Thị Ảnh Bản Đồ</a>
+                    <div class="smenu">
+                        <a href="#" class="_showMAP" id="satellite">Ảnh Vệ Tinh</a>
+                        <a href="#" class="_showMAP" id="ggMAP">Ảnh Bản Đồ</a>
+                        <a href="#" class="_showMAP" id="GPS">Vị Trí Hiện Tại</a>
+                    </div>
+                </li>
+                <li class="item" id="messages">
+                    <a href="#messages" class="btn"><i class="fas fa-map-marked-alt"></i>Thông Tin Địa Điểm</a>
+                    <div class="smenu">
+                        <a href="#" class="show_infor">Công An Phường Hàng Gai</a>
+                        <a href="#" class="show_infor">Ngã 4 Hàng Nón - Hàng Điếu</a>
+                        <a href="#" class="show_infor">Ngã tư Hàng Bông - Hàng Hòm</a>
+                        <a href="#" class="show_infor">Cafe Nuôi 34 - Lương Văn Can</a>
+                        <a href="#" class="show_infor">SaomBank PGD Hàng Bồ</a>
+                        <a href="#" class="show_infor">Văn Phòng phẩm Phương Nội</a>
+                        <a href="#" class="show_infor">KingRoti- Hàng Gai</a>
+                        <a href="#" class="show_infor">Ngã Tư Chùa Kim Cổ</a>
+                        <a href="#" class="show_infor">Ngã 3 Đường Thành - Yên Thái</a>
+                        <a href="#" class="show_infor">Golden Moon Hotel & Travel</a>
+                        <a href="#" class="show_infor">Ngã Tư Hàng Bông - Hàng Mành</a>
+                        <a href="#" class="show_infor">Phố Chả Cá - Hàng Cân</a>
+                        <a href="#" class="show_infor">Ủy Ban Phường Hàng Gai , quận Hoàn Kiếm</a>
+                        <a href="#" class="show_infor">Xôi Rán Hàng Điếu</a>
+                        <a href="#" class="show_infor">Ngân Hàng Đầu Tư & Phát Triển Việt Nam (Bidv) - PGD Đường Thành</a>
+                        <a href="#" class="show_infor"> Bia Hơi Ngọc Linh</a>
+                        <a href="#" class="show_infor">phố Hàng Vải - Thuốc bắc</a>
+                        <a href="#" class="show_infor"> Hạ Long Bay CastaWay Tour</a>
+                        <a href="#" class="show_infor"> Ngã 3 Hàng Phèn</a>
+                        <a href="#" class="show_infor">Công ty cổ phần sữa Hà Nội</a>
+                        <a href="#" class="show_infor"> Marker & Food Phố Cổ</a>
+                    </div>
+                </li>
+                <li class="item" id="setting">
+                    <a href="#setting" class="btn"><i class="fas fa-cogs"></i> Collision Center</a>
+                    <div class="smenu">
+                        <a href="#">ITALY</a>
+                        <a href="#">BELGIUM</a>
+                        <a href="#">FRANCE</a>
+                        <a href="#">RUSSIA</a>
+                        <a href="#">MONACO</a>
+                        <a href="#">LUXEMBOURG</a>
+                        <a href="#">POLAN</a>
+                        <a href="#">AUSTRIA</a>
+                        <a href="#">GERMANY</a>
+                    </div>
+                </li>
+                <li class="item" id="setting1">
+                    <a href="#setting1" class="btn"><i class="fas fa-cogs"></i>Thông Tin Hướng dẫn chỉ đường</a>
+                    <div class="smenu">
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>
+                        <a href="#" class="FindRoad">-----</a>             
+                    </div>
+                </li>
+                <li class="item" id="Marker">
+                    <a href="#Marker" class="btn"><i class="fas fa-cogs"></i>Ẩn / Hiện Địa Điểm</a>
+                    <div class="smenu">
+                        <a href="#" id="hide_map">Hide Markers(Ẩn Địa Điểm)</a>
+                        <a href="#" id="show_map">Show All Marker(Hiện Thị Địa Điểm)</a>
+                        <a href="#">----------</a>
+                    </div>
+                </li>
+                <li class="item" id="load">
+                    <a href="#load" class="btn" id="re_load"><i class="fas fa-cogs"></i>Làm Mới Bản Đồ</a>
+                </li>
+                <li>
+                    <a href="#" class="btn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </li>
+            </div>
+        </div>
+        <div class="footter">
+            <img src="logo-ggmap.png" alt="">
+            <ul class="menutrai">
+                <li class="b"><a href=""> COMPANY</a></li>
+                <li class="b"><a href=""> CAREES</a>
+                </li>
+                <li class="b"><a href="">CONTACT US</a></li>
+                <li class="b"><a href="">MEDIA CENTER</a></li>
+            </ul>
+            <p>Copyright © 2020 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group. All rights reserved. VAT no. IT 00591801204</p>
+    </body>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArM4GnMGbtJoZTyMZQjvPH3YBwWM5fGv4 &callback=initMap" async defer></script>
+    </html>
+</div>
